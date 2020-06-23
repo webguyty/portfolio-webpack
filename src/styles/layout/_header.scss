@@ -1,0 +1,11 @@
+.portfolio-header {
+  height: 95vh;
+  background-color: steelblue;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  &__content-box {
+    display: inline-block;
+  }
+}
