@@ -1,4 +1,13 @@
+section.section-intro {
+  margin: 10rem $page-margin;
+
+  @include respond(tab-port) {
+    margin: 10rem $page-margin-mobile;
+  }
+}
+
 .filler {
   width: 100%;
   height: 100rem;
+  background-color: moccasin;
 }

@@ -1,11 +1,32 @@
 .portfolio-header {
-  height: 85vh;
+  height: 96vh;
   background-color: steelblue;
   display: grid;
   justify-content: center;
   align-items: center;
 
+  @include respond(tab-port) {
+    height: 100vh;
+  }
+
   &__content-box {
-    display: inline-block;
+    // display: inline-block;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 2.5rem;
+  }
+
+  & a {
+    margin-left: 2rem;
   }
 }

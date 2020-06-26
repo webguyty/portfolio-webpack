@@ -1,10 +1,12 @@
 @import 'styles/base/mixins';
+@import 'styles/base/variables';
 @import 'styles/base/base';
 @import 'styles/base/typography';
 @import 'styles/base/utilities';
-@import 'styles/base/variables';
 
 @import 'styles/layout/header';
 @import 'styles/layout/navigation';
 
 @import 'styles/pages/home';
+
+@import 'styles/components/_introduction';

@@ -41,10 +41,3 @@ $breakpoint argument choices:
     } // 1800px
   }
 }
-
-@mixin center-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
