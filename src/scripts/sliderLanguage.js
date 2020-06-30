@@ -11,9 +11,12 @@ import Glide from '@glidejs/glide';
 window.addEventListener('load', (event) => {
   new Glide('.glide', {
     type: 'carousel',
-    startAt: 0,
-    perView: 1,
+    perView: 3,
+    gap: 40,
+    startAt: 1,
+    focusAt: 'center',
+    peek: 200,
+    autoplay: 3000,
+    hoverpause: true,
   }).mount();
-
-  console.log('wtf mate');
 });

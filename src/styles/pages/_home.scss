@@ -1,9 +1,11 @@
 section.section-intro {
-  margin: 10rem $page-margin;
+  padding: 10rem $page-margin;
 
   @include respond(tab-port) {
     margin: 10rem $page-margin-mobile;
   }
+
+  background-color: $intro-color;
 }
 
 .filler {
