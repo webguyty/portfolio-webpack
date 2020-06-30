@@ -1,3 +1,6 @@
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
+
 @import 'styles/base/mixins';
 @import 'styles/base/variables';
 @import 'styles/base/base';
@@ -7,6 +10,7 @@
 @import 'styles/layout/header';
 @import 'styles/layout/navigation';
 
-@import 'styles/pages/home';
+@import 'styles/components/introduction';
+@import 'styles/components/slider';
 
-@import 'styles/components/_introduction';
+@import 'styles/pages/home';
