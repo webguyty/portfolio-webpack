@@ -20,7 +20,7 @@ import { DataTotals, Data } from '../assets/covidData';
 //   return graphData;
 // }
 
-function showGraph() {
+export function showGraph() {
   // display handles view controlling
   const display = {
     // Graph types
@@ -49,7 +49,6 @@ function showGraph() {
 
   // Pull in data
   const data = Data;
-  const dataTotals = DataTotals;
   console.log(data);
 
   // Parse time for cross browser compatability
@@ -429,7 +428,7 @@ function showGraph() {
         if (point < halfX) {
           return point + 70;
         }
-        return point - 120;
+        return point - 170;
       }
 
       function placeTooltipY(point) {
@@ -462,7 +461,7 @@ function showGraph() {
         .append('circle')
         .attr('cy', (d) => yScale(yValue(d)))
         .attr('cx', (d) => xScale(xValue(d)))
-        .attr('r', 3)
+        .attr('r', 3.5)
         .attr('class', (d) => `graph-circle graph-circle-${d.name}`)
         .on('mouseover', mouseover)
         .on('mousemove', mousemove)
@@ -542,4 +541,13 @@ function showGraph() {
   });
 }
 
-export default showGraph;
+export function showData() {
+  const { cases, active, deaths, hospitalized, recovered, tested } = DataTotals;
+
+  document.getElementById('data-cases').textContent = cases;
+  document.getElementById('data-deaths').textContent = deaths;
+  document.getElementById('data-hospitalized').textContent = hospitalized;
+  document.getElementById('data-recovered').textContent = recovered;
+  document.getElementById('data-active').textContent = active;
+  document.getElementById('data-tested').textContent = tested;
+}

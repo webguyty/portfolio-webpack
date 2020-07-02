@@ -146,31 +146,74 @@
     </section>
 
     <section class="section-covid">
-      <h2>Latest Projects</h2>
-      <h3>Graphing for CovidAtlas.com</h3>
+    <h2>Latest Projects</h2>
+    <h3>Graphing for CovidAtlas.com</h3>
+    <!-- grid -->
+    <div class="graph-layout">
+      <!-- Data totals -->
+      <div class="data-container">
+        <div class="data-row">
+          <h3 class='data-title'>Cases:</h3>
+          <h3 class='data-data' id=data-cases></h3>
+        </div>
+        <div class="data-row">
+          <h3 class='data-title'>Deaths:</h3>
+          <h3 class='data-data' id=data-deaths></h3>
+        </div>
+        <div class="data-row">
+          <h3 class='data-title'>Hospitalized:</h3>
+          <h3 class='data-data' id=data-hospitalized></h3>
+        </div>
+        <div class="data-row">
+         <h3 class='data-title'>Recovered:</h3>
+         <h3 class='data-data' id=data-recovered></h3>
+        </div>
+        <div class="data-row">
+         <h3 class='data-title'>Active Cases:</h3>
+         <h3 class='data-data' id=data-active></h3>
+        </div>
+        <div class="data-row">
+          <h3 class='data-title'>Tested:</h3>
+          <h3 class='data-data' id=data-tested></h3>
+        </div>
+      </div>
+      <!-- End data totals -->
       <!-- Covid Atlas graph -->
       <div class="graph-container">
         <h4 class="">Timeline</h1>
         <div class="graph-button-container">
           <div class="graph-button-container-overview">
-            <sp-button variant="primary" id="graph-btn-overview">Overview</sp-button>
-            <sp-button variant="primary" id="graph-btn-daily">Daily Statistics</sp-button>
+            <button class='graph-button graph-button--primary' id="graph-btn-overview">Overview</button>
+            <button class='graph-button graph-button--primary' id="graph-btn-daily">Daily Statistics</button>
           </div>
           <div class="graph-button-container-daily">
-            <sp-button variant="secondary" id="graph-btn-linear">Linear</sp-button>
-            <sp-button variant="secondary" id="graph-btn-log">Logarithmic</sp-button>
+            <button class='graph-button graph-button--secondary' id="graph-btn-linear">Linear</button>
+            <button class='graph-button graph-button--secondary' id="graph-btn-log">Logarithmic</button>
           </div>
         </div>
         <div class="graph-legend">
           <div class="graph-legend-key-container">
-          <strong>Key:</strong>
+          <span class='graph-legend-key-description'>Key:</span>
           </div>
         </div>
         <div id="graph" class="ca-Graph"></div>
       </div>
+      <!-- End graph -->
+    </div>
+    <!-- End grid  -->
+  </section>
 
+  <section class="section-tnd">
+    <div class="tnd-grid">
+      <div class="tnd-features">
+        <h3>Fully customized website for TheNobleDog.com</h3>
+        <p>Using Gatsby for React.</p>
+      </div>
+      <div class="tnd-screen tnd-screen--1"></div>
+      <div class="tnd-screen tnd-screen--2"></div>
+   </div>
+  </section>
 
-    </section>
     <div class="filler"></div>
   </body>
 </html>

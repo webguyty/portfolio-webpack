@@ -5,6 +5,7 @@ import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
 
 import './scripts/sliderLanguage';
-import showGraph from './scripts/graph';
+import { showGraph, showData } from './scripts/graph';
 
 showGraph();
+showData();
