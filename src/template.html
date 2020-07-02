@@ -144,6 +144,33 @@
         </p>
       </div>
     </section>
+
+    <section class="section-covid">
+      <h2>Latest Projects</h2>
+      <h3>Graphing for CovidAtlas.com</h3>
+      <!-- Covid Atlas graph -->
+      <div class="graph-container">
+        <h4 class="">Timeline</h1>
+        <div class="graph-button-container">
+          <div class="graph-button-container-overview">
+            <sp-button variant="primary" id="graph-btn-overview">Overview</sp-button>
+            <sp-button variant="primary" id="graph-btn-daily">Daily Statistics</sp-button>
+          </div>
+          <div class="graph-button-container-daily">
+            <sp-button variant="secondary" id="graph-btn-linear">Linear</sp-button>
+            <sp-button variant="secondary" id="graph-btn-log">Logarithmic</sp-button>
+          </div>
+        </div>
+        <div class="graph-legend">
+          <div class="graph-legend-key-container">
+          <strong>Key:</strong>
+          </div>
+        </div>
+        <div id="graph" class="ca-Graph"></div>
+      </div>
+
+
+    </section>
     <div class="filler"></div>
   </body>
 </html>
