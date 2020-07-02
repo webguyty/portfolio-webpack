@@ -1,4 +1,57 @@
+section.section-tnd {
+  & > h3:first-of-type {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  & > p:first-of-type {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
 .tnd-grid {
+  margin-top: 8rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.tnd-features {
+  h3 {
+    text-align: center;
+    text-decoration: underline;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &__ul {
+    padding: 0 3rem;
+  }
+
+  &__link-li {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: start;
+  }
+
+  &__link-title {
+    display: inline;
+    color: blue;
+  }
+
+  & a {
+    display: inline;
+    // text-align: right;
+  }
+}
+
+.tnd-screen {
+  height: 50rem;
+  overflow-y: auto;
+  margin: auto;
+  padding: 0 1rem;
+  // width: 40.1rem;
 }
