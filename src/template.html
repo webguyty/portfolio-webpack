@@ -146,10 +146,10 @@
     </section>
 
     <section class="section-covid">
-    <h2>Latest Projects</h2>
-    <h3>Graphing for CovidAtlas.com</h3>
+      <h2>Latest Projects</h2>
+      <h3>Graphing for CovidAtlas.com</h3>
     <!-- grid -->
-    <div class="graph-layout">
+     <div class="graph-layout">
       <!-- Data totals -->
       <div class="data-container">
         <div class="data-row">
@@ -228,6 +228,82 @@
         <img src="./images/tnd-methods-thumb.png" alt="Web development of home page for The Noble Dog website">
       </div>
    </div>
+  </section>
+
+  <section class="section-contact">
+    <div class='contactForm'>
+      <h3 class='contactForm__title'>Interested in help with your next web project? Send me a message!</h3>
+      <p class='contactForm__subtitle'>Please let me know if you have any questions or comments.</p>
+      <form
+        name='webguyty'
+        method='post'
+        class='form'
+      >
+        <input type='hidden' name='form-name' value='contact' />
+        <div class='form__grid'>
+          <div class='form__grid--1'>
+            <div class='form__group'>
+              <label for='name' class='form__label'>
+                Name
+              </label>
+              <input
+                type='text'
+                class='form__input'
+                placeholder='Shannon and Tiger'
+                id='name'
+                name='name'
+                required
+              />
+            </div>
+            <div class='form__group'>
+              <label for='email' class='form__label'>
+                Email
+              </label>
+              <input
+                type='email'
+                class='form__input'
+                placeholder='dog@gmail.com'
+                id='email'
+                name='email'
+                required
+              />
+            </div>
+            <div class='form__group'>
+              <label for='phone' class='form__label'>
+                Phone Number (optional)
+              </label>
+              <input
+                type='tel'
+                class='form__input'
+                placeholder='(805) 555-5555'
+                id='phone'
+                name='phone'
+              />
+            </div>
+          </div>
+        
+        <div class="form__grid--2">
+          <div class='form__group'>
+            <label for='message' class='form__label'>
+              Message
+            </label>
+            <textarea
+              type='textarea'
+              class='form__input'
+              placeholder='Tell us a little bit about your dog and their behavior. Please let us know if you have any questions we are happy to answer them!'
+              id='message'
+              name='message' 
+              required
+            ></textarea>
+          </div>
+         </div>
+        </div>
+        <!-- // end form grid -->
+        <button class='form__button' type='submit'>
+          Submit
+        </button>
+      </form>
+    </div>
   </section>
 
     <div class="filler"></div>
