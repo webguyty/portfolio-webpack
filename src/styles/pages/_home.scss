@@ -23,7 +23,8 @@ section.section-covid {
 
 section.section-tnd {
   padding: 10rem $page-margin;
-  background-color: $intro-color;
+  background-image: url('./images/design/az-subtle.png'),
+    linear-gradient(to bottom right, white, rgb(230, 230, 230));
 
   @include respond(tab-port) {
     padding: 10rem $page-margin-mobile;
