@@ -13,8 +13,13 @@ section.section-tnd {
 .tnd-grid {
   margin-top: 8rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  justify-content: space-evenly;
+
+  @include respond(tab-land) {
+    grid-template-columns: auto;
+  }
 }
 
 .tnd-features {

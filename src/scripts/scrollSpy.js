@@ -6,8 +6,4 @@ const options = {
   offset: 100, // Menu item will active before scroll to a matched section 100px
 };
 
-// init:
-// scrollSpy(document.getElementById('main-menu'), options);
-
-// or shorter:
 scrollSpy('#menu', options);
