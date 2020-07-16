@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172817000-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172817000-1');
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tyler Austin | Web Portfolio</title>
@@ -9,7 +18,7 @@
     <!-- Div for header height and nav -->
     <!-- <div class="header-container"> -->
     <!-- Header -->
-    <header class="portfolio-header">
+    <header class="portfolio-header scrollspy" id='sec-intro'>
       <div class="portfolio-header__grid">
         <div class="portfolio-header__avatar">
           <!-- <img src="./images/webguyty-golden.jpg" alt="WebGuyTy with two golden retrievers"> -->
@@ -51,30 +60,30 @@
     <!-- Navigation -->
     <div class="navigation">
       <!-- For mobile nav -->
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <!-- <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
 
-      <div class="navigation__background">&nbsp;</div>
+      <div class="navigation__background">&nbsp;</div> -->
 
       <!-- Desktop and mobile nav -->
       <nav class="navigation__nav">
-        <ul class="navigation__list">
+        <ul class="navigation__list" id='menu'>
           <li class="navigation__item">
-            <a href="#" class="navigation__link active">Home</a>
+            <a href="#sec-intro" class="navigation__link active">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Development</a>
+            <a href="#sec-portfolio" class="navigation__link">Portfolio</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Portfolio</a>
+            <a href="#sec-about" class="navigation__link">About</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">About</a>
+            <a href="#sec-contact" class="navigation__link">Message</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Contact</a>
+            <a href="#sec-contact" class="navigation__link navigation__link--hire">Hire</a>
           </li>
         </ul>
       </nav>
@@ -159,7 +168,7 @@
       </div>
     </section>
 
-    <section class="section-covid">
+    <section class="section-covid scrollspy" id='sec-portfolio'>
       <h2>Latest Projects</h2>
       <h3>Graphing for CovidAtlas.com</h3>
     <!-- grid -->
@@ -244,7 +253,11 @@
    </div>
   </section>
 
-  <section class="section-contact">
+  <section class="section-about scrollspy" id='sec-about'>
+    <h2>About</h2>
+  </section>
+    
+  <section class="section-contact scrollspy" id='sec-contact'>
     <div class='contactForm'>
       <h3 class='contactForm__title'>Interested in help with your next web project? Send me a message!</h3>
       <p class='contactForm__subtitle'>Please let me know if you have any questions or comments.</p>
