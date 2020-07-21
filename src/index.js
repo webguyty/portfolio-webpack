@@ -7,6 +7,7 @@ import '@fortawesome/fontawesome-free/js/brands';
 import './scripts/slider';
 import './scripts/scrollSpy';
 import { showGraph, showData } from './scripts/graph';
+import './images/resume.pdf';
 
 showGraph();
 showData();
