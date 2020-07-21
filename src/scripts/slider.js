@@ -8,5 +8,15 @@ new Glide('.glide', {
   focusAt: 'center',
   peek: 200,
   autoplay: 3000,
-  hoverpause: true,
+  hoverpause: false,
+  breakpoints: {
+    1400: {
+      perView: 2,
+      peek: 200,
+    },
+    800: {
+      perView: 2,
+      peek: 50,
+    },
+  },
 }).mount();

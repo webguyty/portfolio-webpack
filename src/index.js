@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
 
-import './scripts/sliderLanguage';
+import './scripts/slider';
 import './scripts/scrollSpy';
 import { showGraph, showData } from './scripts/graph';
 

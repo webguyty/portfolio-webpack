@@ -12,15 +12,26 @@ module.exports = {
         use: ['html-loader'],
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
+        test: /\.(svg|png|jpg|gif|pdf)$/,
         use: {
           loader: 'file-loader',
           options: {
-            name: '[name].[hash].[ext]',
+            name: '[name].[ext]',
+            // name: '[name].[hash].[ext]',
             outputPath: 'imgs',
           },
         },
       },
+      // {
+      //   test: /\.pdf$/,
+      //   use: {
+      //     loader: 'file-loader',
+      //     options: {
+      //       name: '[name].[ext]',
+      //       outputPath: 'imgs',
+      //     },
+      //   },
+      // },
     ],
   },
 };

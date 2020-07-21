@@ -46,7 +46,7 @@ section.section-tnd {
 section.section-about {
   padding: 10rem $page-margin;
   background-color: $intro-color;
-  height: 50rem;
+  // height: 50rem;
 
   @include respond(big-desktop) {
     padding: 10rem $page-margin-lg;
@@ -60,7 +60,9 @@ section.section-about {
 section.section-contact {
   padding: 10rem $page-margin;
   background-color: $color-grey-dark-3;
-  background-image: url('./images/design/az-subtle.png');
+
+  background-image: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
   @include respond(big-desktop) {
     padding: 10rem $page-margin-lg;

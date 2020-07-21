@@ -3,7 +3,7 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
+  font-size: 16px;
   line-height: 1.7;
   color: $color-grey-dark-3;
 }
@@ -27,6 +27,16 @@ p {
   font-size: 2rem;
 }
 
+$p-spacing: 1rem;
+
 ul > li {
   font-size: 2rem;
+}
+
+ul.primary-list {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+li.primary-list__item {
 }
