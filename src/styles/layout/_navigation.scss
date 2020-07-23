@@ -42,17 +42,18 @@
       &:hover,
       &:active {
         color: $header-blue;
+        border-color: $header-blue;
       }
     }
 
     &--hire {
-      border: 2px solid $color-primary;
-      border-radius: 5px;
-      font-size: 1.8rem !important;
+      // border: 2px solid $color-primary;
+      // border-radius: 5px;
+      // font-size: 1.8rem !important;
 
-      &:hover {
-        border: 2px solid $header-blue;
-      }
+      // &:hover {
+      //   border: 2px solid $header-blue;
+      // }
     }
   }
 

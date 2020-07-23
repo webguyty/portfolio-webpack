@@ -1,16 +1,15 @@
 .about {
-  & > p:not(:last-child) {
-    margin-bottom: $p-spacing;
+  p:not(:last-child) {
+    margin-bottom: 2rem;
   }
 
-  &__list {
+  &__text-grid {
     display: grid;
-    grid-template-columns: auto auto;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 
-    @include respond(phone) {
-      grid-template-columns: auto;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -20,14 +19,14 @@
     gap: 1rem;
 
     @include respond(phone) {
-      grid-template-columns: auto;
+      grid-template-columns: 1fr;
     }
   }
 
   &__images {
     width: 80%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 5rem;
 
     & img {
       width: 100%;

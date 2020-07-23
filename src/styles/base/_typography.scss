@@ -22,20 +22,33 @@ h3 {
   font-size: 2.2rem;
   margin: 1rem 0;
 }
+h4 {
+  font-size: 1.9rem;
+}
 
 p {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 $p-spacing: 1rem;
 
+a,
+a:visited {
+  color: $header-blue;
+}
+
+a:hover,
+a:active {
+  color: $color-primary;
+}
+
 ul > li {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 ul.primary-list {
   list-style: none;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 li.primary-list__item {

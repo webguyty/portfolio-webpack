@@ -1,0 +1,17 @@
+.hire {
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
+    @include respond(phone) {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__icon {
+    color: $header-blue;
+    margin-right: 1rem;
+  }
+}
