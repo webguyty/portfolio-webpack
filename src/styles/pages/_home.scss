@@ -32,12 +32,12 @@ section.section-covid {
 }
 
 section.section-tnd {
-  padding: 10rem $page-margin;
+  padding: 5rem $page-margin;
   background-image: url('./images/design/az-subtle.png'),
     linear-gradient(to bottom right, white, rgb(230, 230, 230));
 
   @include respond(big-desktop) {
-    padding: 10rem $page-margin-lg;
+    padding: 5rem $page-margin-lg;
   }
 
   @include respond(phone) {
@@ -75,13 +75,6 @@ section.section-hire {
 
   @include respond(tab-port) {
     padding: 10rem $page-margin-mobile;
-  }
-
-  & h2 {
-    font-size: 4rem;
-    text-align: center;
-    color: $color-primary;
-    text-decoration: underline;
   }
 }
 
