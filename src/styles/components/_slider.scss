@@ -91,4 +91,24 @@
   &__bg-title {
     margin: 0;
   }
+
+  &__arrow {
+    color: $header-blue;
+    border: 2px solid rgba($header-blue, 0.3);
+    background-color: rgba($color-grey-light-1, 0.55);
+
+    &--left {
+      left: -2rem;
+      @include respond(phone) {
+        left: -1rem;
+      }
+    }
+
+    &--right {
+      right: -2rem;
+      @include respond(phone) {
+        right: -1rem;
+      }
+    }
+  }
 }

@@ -6,7 +6,7 @@ section.section-intro {
     padding: 10rem $page-margin-lg;
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     padding: 10rem $page-margin-mobile;
   }
 }
@@ -40,7 +40,7 @@ section.section-tnd {
     padding: 5rem $page-margin-lg;
   }
 
-  @include respond(phone) {
+  @include respond(tab-land) {
     padding: 10rem $page-margin-mobile;
   }
 }
@@ -73,7 +73,7 @@ section.section-hire {
     padding: 10rem $page-margin-lg;
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     padding: 10rem $page-margin-mobile;
   }
 }
@@ -87,7 +87,7 @@ section.section-contact {
     padding: 10rem $page-margin-lg;
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     padding: 10rem $page-margin-mobile;
   }
 }
@@ -101,7 +101,7 @@ section.section-about {
     padding: 10rem $page-margin-lg;
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     padding: 10rem $page-margin-mobile;
   }
 }

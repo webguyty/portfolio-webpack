@@ -26,11 +26,8 @@
     gap: 1rem 3rem;
     margin-bottom: 1rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       grid-template-columns: auto;
-    }
-
-    @include respond(phone) {
       gap: 1.5rem;
     }
 
