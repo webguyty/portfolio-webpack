@@ -1,6 +1,25 @@
 section.section-intro {
   padding: 10rem $page-margin;
   background-color: $intro-color;
+  margin-bottom: 5rem;
+
+  @include respond(big-desktop) {
+    padding: 10rem $page-margin-lg;
+  }
+
+  @include respond(tab-land) {
+    padding: 10rem $page-margin-mobile;
+  }
+}
+
+section.section-mern {
+  padding: 10rem $page-margin;
+  // background-color: $color-grey-dark-3;
+  // color: $color-grey-light-1;
+
+  & h3 {
+    color: $color-primary;
+  }
 
   @include respond(big-desktop) {
     padding: 10rem $page-margin-lg;
@@ -21,13 +40,6 @@ section.section-covid {
 
   @include respond(tab-land) {
     padding: 10rem $page-margin-mobile;
-  }
-
-  & h2 {
-    font-size: 4rem;
-    text-align: center;
-    color: $color-primary;
-    text-decoration: underline;
   }
 }
 
