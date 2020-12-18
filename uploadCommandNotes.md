@@ -16,9 +16,9 @@ aws s3 rm s3://webguyty-portfolio --recursive
 list all files in directory
 aws s3 ls s3://webguyty-portfolio
 
-######
+#####
 
 Code to run after building locally:
 aws s3 sync ./dist s3://webguyty-portfolio --delete
 
-######
+#####
