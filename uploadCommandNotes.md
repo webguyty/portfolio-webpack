@@ -11,6 +11,9 @@ synchronizing files and folders (and deletions) with s3
 aws s3 sync ./dist s3://webguyty-portfolio --delete
 
 delete all files from bucket
+
+<!--  -->
+
 aws s3 rm s3://webguyty-portfolio --recursive
 
 list all files in directory
