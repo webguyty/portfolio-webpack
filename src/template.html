@@ -321,15 +321,16 @@
     
     <section class="section-contact scrollspy" id='sec-contact'>
       <div class='contactForm'>
-        <h3 class='contactForm__title'>Interested in help with your next web project? Send me a message!</h3>
-        <p class='contactForm__subtitle'>Please let me know if you have any questions or comments.</p>
         <form
           name='webguyty'
           class='form'
           id='form'
         >
-          <input type='hidden' name='form-name' value='webguyty' />
-          <div class='form__grid'>
+        <h3 class='contactForm__title'>Interested in help with your next web project? Send me a message!</h3>
+        <p class='contactForm__subtitle'>Please let me know if you have any questions or comments.</p>
+        <p class='contactForm__statusMessage success' id='form_success'>Your message was succesfully sent!</p>
+        <p class='contactForm__statusMessage fail' id='form_fail'>Your message was unsuccesful. Please send an email to tyler@webguyty.</p>
+        <div class='form__grid'>
             <div class='form__grid--1'>
               <div class='form__group'>
                 <label for='name' class='form__label'>

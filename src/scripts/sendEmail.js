@@ -9,6 +9,9 @@ function sendEmail(e) {
   const phone = document.getElementById("form_phone").value;
   const message = document.getElementById("form_message").value;
 
+  const success = document.getElementById("form_success");
+  const fail = document.getElementById("form_fail");
+
   console.log(name, email, phone, message);
 
   fetch("https://ujsa21iwz0.execute-api.us-west-2.amazonaws.com/sendEmail", {
