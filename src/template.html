@@ -325,8 +325,8 @@
         <p class='contactForm__subtitle'>Please let me know if you have any questions or comments.</p>
         <form
           name='webguyty'
-          method='post'
           class='form'
+          id='form'
         >
           <input type='hidden' name='form-name' value='webguyty' />
           <div class='form__grid'>
@@ -339,7 +339,7 @@
                   type='text'
                   class='form__input'
                   placeholder='Shannon and Tiger'
-                  id='name'
+                  id='form_name'
                   name='name'
                   required
                 />
@@ -352,7 +352,7 @@
                   type='email'
                   class='form__input'
                   placeholder='dog@gmail.com'
-                  id='email'
+                  id='form_email'
                   name='email'
                   required
                 />
@@ -365,7 +365,7 @@
                   type='tel'
                   class='form__input'
                   placeholder='(805) 555-5555'
-                  id='phone'
+                  id='form_phone'
                   name='phone'
                 />
               </div>
@@ -380,7 +380,7 @@
                 type='textarea'
                 class='form__input'
                 placeholder=''
-                id='message'
+                id='form_message'
                 name='message' 
                 required
               ></textarea>
@@ -388,7 +388,7 @@
           </div>
           </div>
           <!-- // end form grid -->
-          <button class='form__button' type='submit'>
+          <button class='form__button' type='submit' id='form_submit'>
             Submit
           </button>
         </form>

@@ -12,3 +12,8 @@ import "./assets/webguyty-resume.pdf";
 
 showGraph();
 showData();
+
+function myFunc(e) {
+  e.preventDefault();
+  console.log("sent!!");
+}
