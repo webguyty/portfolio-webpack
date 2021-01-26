@@ -2,24 +2,29 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172817000-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-172817000-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-172817000-1');
+      gtag("config", "UA-172817000-1");
     </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tyler Austin | Web Portfolio</title>
   </head>
   <!-- Display none on body to hide html until css is loaded -->
-  <body style="display: none;">
+  <body style="display: none">
     <!-- Div for header height and nav -->
     <!-- <div class="header-container"> -->
     <!-- Header -->
-    <header class="portfolio-header scrollspy" id='sec-intro'>
+    <header class="portfolio-header scrollspy" id="sec-intro">
       <div class="portfolio-header__grid">
         <div class="portfolio-header__avatar">
           <!-- <img src="./images/webguyty-golden.jpg" alt="WebGuyTy with two golden retrievers"> -->
@@ -32,7 +37,7 @@
               <div class="portfolio-header__icon-container">
                 <i class="far fa-envelope portfolio-header__icon"></i>
               </div>
-              <a href='mailto:tyler@webguyty.com'>tyler@webguyty.com</a>
+              <a href="mailto:tyler@webguyty.com">tyler@webguyty.com</a>
             </li>
             <li class="portfolio-header__item">
               <div class="portfolio-header__icon-container">
@@ -42,9 +47,19 @@
             </li>
             <li class="portfolio-header__item">
               <div class="portfolio-header__icon-container">
+                <i class="fab fa-github-square portfolio-header__icon"></i>
+              </div>
+              <a href="https://github.com/webguyty" target="_blank"
+                >@webguyty</a
+              >
+            </li>
+            <li class="portfolio-header__item">
+              <div class="portfolio-header__icon-container">
                 <i class="fas fa-address-card portfolio-header__icon"></i>
               </div>
-              <a href='https://goo.gl/maps/d5gMmrBNirXk7zUT6' target='_blank'>Camarillo, CA</a>
+              <a href="https://goo.gl/maps/d5gMmrBNirXk7zUT6" target="_blank"
+                >Camarillo, CA</a
+              >
             </li>
           </ul>
         </div>
@@ -55,7 +70,7 @@
     <!-- Navigation -->
     <div class="navigation">
       <nav class="navigation__nav">
-        <ul class="navigation__list" id='menu'>
+        <ul class="navigation__list" id="menu">
           <li class="navigation__item">
             <a href="#sec-intro" class="navigation__link active">Home</a>
           </li>
@@ -63,7 +78,9 @@
             <a href="#sec-portfolio" class="navigation__link">Portfolio</a>
           </li>
           <li class="navigation__item">
-            <a href="#sec-hire" class="navigation__link navigation__link--hire">Hire</a>
+            <a href="#sec-hire" class="navigation__link navigation__link--hire"
+              >Hire</a
+            >
           </li>
           <li class="navigation__item">
             <a href="#sec-contact" class="navigation__link">Contact</a>
@@ -80,9 +97,7 @@
     <section class="section-intro">
       <div class="container">
         <div class="introduction">
-          <h1>
-            Hello! My name is Tyler, welcome to my portfolio
-          </h1>
+          <h1>Hello! My name is Tyler, welcome to my portfolio</h1>
 
           <h3>Utilizing modern and proven web technologies</h3>
 
@@ -154,22 +169,32 @@
       </div>
     </section>
 
-    <section class="scrollspy" id='sec-portfolio'>
+    <section class="scrollspy" id="sec-portfolio">
+      <!-- <h2 class='styled-headline'>Portfolio</h2> -->
 
-      <h2 class='styled-headline'>Portfolio</h2>
-
-      <section class="section-mern" >
+      <section class="section-mern">
         <div class="container">
           <!-- <h2>Portfolio</h2> -->
           <div class="project">
-            <h3>Full stack MERN Apps</h3>
-            <p>Developing and designing the graphing of data collected on Coronavirus statistics across the globe. Creating a cohesive way to dynamically graph and display data. Integration of a user interface</p>
-            <p><strong>Technologies used:</strong> Javascript, D3, CSS, HTML</p>
-            <p><strong>Github:</strong> <a href='https://github.com/webguyty/coronadatascraper/blob/graph/covidatlas/location-graph.js' target='_blank'>JavaScript and D3</a></p>
-          </div>
-          <!-- grid -->
-          <div class="mern-layout">
-            <div class="mern-backend"></div>
+            <h3>Full stack applications</h3>
+            <p>
+              Developing front-end applications connecting to custom RESTFUL API
+              web services.
+            </p>
+            <!-- grid -->
+            <div class="mern-layout">
+              <div class="mern-backend">
+                <p><strong>Technologies used:</strong></p>
+                <p>
+                  <strong>Github:</strong>
+                  <a
+                    href="https://github.com/webguyty/coronadatascraper/blob/graph/covidatlas/location-graph.js"
+                    target="_blank"
+                    >JavaScript and D3</a
+                  >
+                </p>
+              </div>
+            </div>
             <div class="mern-goalSeaker"></div>
             <div class="mern-contactKeeper"></div>
             <div class="mern-itLogger"></div>
@@ -178,61 +203,93 @@
         </div>
       </section>
 
-      <section class="section-covid" >
+      <section class="section-covid">
         <!-- <h2>Portfolio</h2> -->
         <div class="container">
           <div class="project">
             <h3>Front-end development for CovidAtlas.com</h3>
-            <p>Developing and designing the graphing of data collected on Coronavirus statistics across the globe. Creating a cohesive way to dynamically graph and display data. Integration of a user interface</p>
+            <p>
+              Developing and designing the graphing of data collected on
+              Coronavirus statistics across the globe. Creating a cohesive way
+              to dynamically graph and display data. Integration of a user
+              interface
+            </p>
             <p><strong>Technologies used:</strong> Javascript, D3, CSS, HTML</p>
-            <p><strong>Github:</strong> <a href='https://github.com/webguyty/coronadatascraper/blob/graph/covidatlas/location-graph.js' target='_blank'>JavaScript and D3</a></p>
+            <p>
+              <strong>Github:</strong>
+              <a
+                href="https://github.com/webguyty/coronadatascraper/blob/graph/covidatlas/location-graph.js"
+                target="_blank"
+                >JavaScript and D3</a
+              >
+            </p>
           </div>
           <!-- grid -->
           <div class="graph-layout">
             <!-- Data totals -->
             <div class="data-container">
               <div class="data-row">
-                <h3 class='data-title'>Cases:</h3>
-                <h3 class='data-data' id=data-cases></h3>
+                <h3 class="data-title">Cases:</h3>
+                <h3 class="data-data" id="data-cases"></h3>
               </div>
               <div class="data-row">
-                <h3 class='data-title'>Deaths:</h3>
-                <h3 class='data-data' id=data-deaths></h3>
+                <h3 class="data-title">Deaths:</h3>
+                <h3 class="data-data" id="data-deaths"></h3>
               </div>
               <div class="data-row">
-                <h3 class='data-title'>Hospitalized:</h3>
-                <h3 class='data-data' id=data-hospitalized></h3>
+                <h3 class="data-title">Hospitalized:</h3>
+                <h3 class="data-data" id="data-hospitalized"></h3>
               </div>
               <div class="data-row">
-              <h3 class='data-title'>Recovered:</h3>
-              <h3 class='data-data' id=data-recovered></h3>
+                <h3 class="data-title">Recovered:</h3>
+                <h3 class="data-data" id="data-recovered"></h3>
               </div>
               <div class="data-row">
-              <h3 class='data-title'>Active Cases:</h3>
-              <h3 class='data-data' id=data-active></h3>
+                <h3 class="data-title">Active Cases:</h3>
+                <h3 class="data-data" id="data-active"></h3>
               </div>
               <div class="data-row">
-                <h3 class='data-title'>Tested:</h3>
-                <h3 class='data-data' id=data-tested></h3>
+                <h3 class="data-title">Tested:</h3>
+                <h3 class="data-data" id="data-tested"></h3>
               </div>
             </div>
             <!-- End data totals -->
             <!-- Covid Atlas graph -->
             <div class="graph-container">
-              <h4 class="">Timeline</h1>
+              <h4 class="">Timeline</h4>
               <div class="graph-button-container">
                 <div class="graph-button-container-overview">
-                  <button class='graph-button graph-button--primary' id="graph-btn-overview">Overview</button>
-                  <button class='graph-button graph-button--primary' id="graph-btn-daily">Daily Statistics</button>
+                  <button
+                    class="graph-button graph-button--primary"
+                    id="graph-btn-overview"
+                  >
+                    Overview
+                  </button>
+                  <button
+                    class="graph-button graph-button--primary"
+                    id="graph-btn-daily"
+                  >
+                    Daily Statistics
+                  </button>
                 </div>
                 <div class="graph-button-container-daily">
-                  <button class='graph-button graph-button--secondary' id="graph-btn-linear">Linear</button>
-                  <button class='graph-button graph-button--secondary' id="graph-btn-log">Logarithmic</button>
+                  <button
+                    class="graph-button graph-button--secondary"
+                    id="graph-btn-linear"
+                  >
+                    Linear
+                  </button>
+                  <button
+                    class="graph-button graph-button--secondary"
+                    id="graph-btn-log"
+                  >
+                    Logarithmic
+                  </button>
                 </div>
               </div>
               <div class="graph-legend">
                 <div class="graph-legend-key-container">
-                <span class='graph-legend-key-description'>Key:</span>
+                  <span class="graph-legend-key-description">Key:</span>
                 </div>
               </div>
               <div id="graph" class="ca-Graph"></div>
@@ -240,25 +297,50 @@
             <!-- End graph -->
           </div>
           <!-- End grid  -->
-      </div>
+        </div>
       </section>
 
       <section class="section-tnd">
         <div class="container">
           <div class="project">
             <h3>Front-end development for TheNobleDog.com</h3>
-            <p>Created a completely custom website while using mobile friendly styling and layout. Custom components, cards, forms, and headers using SCSS. React components displaying testimonials in various ways.</p>
-            <p><strong>Technologies used:</strong> React, Gatsby, SCSS, JavaScript, HTML</p>
-            <p><strong>Github: </strong> <a href='https://github.com/webguyty/noble-dog' target='_blank' class='mr-2'>Full website code </a>
-              <strong> View website: </strong><a href='http://www.thenobledog.com' target='_blank'>thenobledog.com</a></p>
+            <p>
+              Created a completely custom website while using mobile friendly
+              styling and layout. Custom components, cards, forms, and headers
+              using SCSS. React components displaying testimonials in various
+              ways.
+            </p>
+            <p>
+              <strong>Technologies used:</strong> React, Gatsby, SCSS,
+              JavaScript, HTML
+            </p>
+            <p>
+              <strong>Github: </strong>
+              <a
+                href="https://github.com/webguyty/noble-dog"
+                target="_blank"
+                class="mr-2"
+                >Full website code
+              </a>
+              <strong> View website: </strong
+              ><a href="http://www.thenobledog.com" target="_blank"
+                >thenobledog.com</a
+              >
+            </p>
           </div>
-          
+
           <div class="tnd-grid">
             <div class="tnd-screen tnd-screen--1">
-              <img src="./images/tnd-home-thumb.png" alt="Web development of home page for The Noble Dog website">
+              <img
+                src="./images/tnd-home-thumb.png"
+                alt="Web development of home page for The Noble Dog website"
+              />
             </div>
             <div class="tnd-screen tnd-screen--2">
-              <img src="./images/tnd-methods-thumb.png" alt="Web development of home page for The Noble Dog website">
+              <img
+                src="./images/tnd-methods-thumb.png"
+                alt="Web development of home page for The Noble Dog website"
+              />
             </div>
           </div>
         </div>
@@ -268,88 +350,103 @@
         <div class="container">
           <div class="project">
             <h3>Information on this portfolio</h3>
-            <p>This portfolio is custom created using HTML, SCSS, and JavaScript. Use of ES6 modules compiled with webpack. Used small libraries for the slider, GlideJS, and simple-scrollspy.</p>
-            <p><strong>Technologies used: </strong>HTML, SCSS, JavaScript, Webpack</p>
-            <p><strong>Github: </strong> <a href='https://github.com/webguyty/portfolio' target='_blank'>Portfolio Code</a></p>
+            <p>
+              This portfolio is custom created using HTML, SCSS, and JavaScript.
+              Use of ES6 modules compiled with webpack. Used small libraries for
+              the slider, GlideJS, and simple-scrollspy.
+            </p>
+            <p>
+              <strong>Technologies used: </strong>HTML, SCSS, JavaScript,
+              Webpack
+            </p>
+            <p>
+              <strong>Github: </strong>
+              <a href="https://github.com/webguyty/portfolio" target="_blank"
+                >Portfolio Code</a
+              >
+            </p>
           </div>
         </div>
       </section>
-
     </section>
     <!-- End portfolio section -->
 
-    <section class="section-contact scrollspy" id='sec-contact'>
+    <section class="section-contact scrollspy" id="sec-contact">
       <div class="container">
-        <div class='contactForm'>
-          <form
-            name='webguyty'
-            class='form'
-            id='form'
-          >
-          <h3 class='contactForm__title'>Send me a message through AWS Lambda</h3>
-          <p class='contactForm__subtitle'>Checkout the Javascript for messaging: <a href="https://github.com/webguyty/send-email-lambda" target="_blank">github</a></p>
-          <p class='contactForm__statusMessage success' id='form_success'>Your message was succesfully sent!</p>
-          <p class='contactForm__statusMessage fail' id='form_fail'>Your message was unsuccesful. Please send an email to tyler@webguyty.</p>
-          <div class='form__grid'>
-              <div class='form__grid--1'>
-                <div class='form__group'>
-                  <label for='name' class='form__label'>
-                    Name
-                  </label>
+        <div class="contactForm">
+          <form name="webguyty" class="form" id="form">
+            <h3 class="contactForm__title">
+              Send me a message through AWS Lambda
+            </h3>
+            <p class="contactForm__subtitle">
+              Checkout the Javascript for messaging:
+              <a
+                href="https://github.com/webguyty/send-email-lambda"
+                target="_blank"
+                >github</a
+              >
+            </p>
+            <p class="contactForm__statusMessage success" id="form_success">
+              Your message was succesfully sent!
+            </p>
+            <p class="contactForm__statusMessage fail" id="form_fail">
+              Your message was unsuccesful. Please send an email to
+              tyler@webguyty.
+            </p>
+            <div class="form__grid">
+              <div class="form__grid--1">
+                <div class="form__group">
+                  <label for="name" class="form__label"> Name </label>
                   <input
-                    type='text'
-                    class='form__input'
-                    placeholder='Jerry Willis'
-                    id='form_name'
-                    name='name'
+                    type="text"
+                    class="form__input"
+                    placeholder="Jerry Willis"
+                    id="form_name"
+                    name="name"
                     required
                   />
                 </div>
-                <div class='form__group'>
-                  <label for='email' class='form__label'>
-                    Email
-                  </label>
+                <div class="form__group">
+                  <label for="email" class="form__label"> Email </label>
                   <input
-                    type='email'
-                    class='form__input'
-                    placeholder='jerry@gmail.com'
-                    id='form_email'
-                    name='email'
+                    type="email"
+                    class="form__input"
+                    placeholder="jerry@gmail.com"
+                    id="form_email"
+                    name="email"
                     required
                   />
                 </div>
-                <div class='form__group'>
-                  <label for='phone' class='form__label'>
+                <div class="form__group">
+                  <label for="phone" class="form__label">
                     Phone Number (optional)
                   </label>
                   <input
-                    type='tel'
-                    class='form__input'
-                    placeholder='(805) 555-5555'
-                    id='form_phone'
-                    name='phone'
+                    type="tel"
+                    class="form__input"
+                    placeholder="(805) 555-5555"
+                    id="form_phone"
+                    name="phone"
                   />
                 </div>
               </div>
-            
-            <div class="form__grid--2">
-              <div class='form__group'>
-                <label for='message' class='form__label'>
-                  Message
-                </label>
-                <textarea
-                  type='textarea'
-                  class='form__input'
-                  placeholder=''
-                  id='form_message'
-                  name='message' 
-                  required
-                ></textarea>
+
+              <div class="form__grid--2">
+                <div class="form__group">
+                  <label for="message" class="form__label"> Message </label>
+                  <textarea
+                    type="textarea"
+                    class="form__input"
+                    placeholder=""
+                    id="form_message"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
               </div>
             </div>
-            </div>
             <!-- // end form grid -->
-            <button class='form__button' type='submit' id='form_submit'>
+            <button class="form__button" type="submit" id="form_submit">
               Submit
             </button>
           </form>
@@ -357,17 +454,26 @@
       </div>
     </section>
 
-    <section class="section-hire scrollspy" id='sec-hire'>
+    <section class="section-hire scrollspy" id="sec-hire">
       <div class="container">
         <div class="hire">
           <div class="hire__skills">
             <h2>Hire WebGuyTy</h2>
-            <p>Are you interested in working with me? Please reach out and contact me through email, phone, or send me a message below.</p>
             <p>
-              <a href="./resume/webguyty-resume.pdf" class='mr-1'>View Resume</a>
-              <a href='mailto:tyler@webguyty.com' class='mr-1'>tyler@webguyty.com</a>
-              <a href="tel:5303910975" class='mr-1'>(530) 391-0975</a>
-              <a href="https://github.com/webguyty" class='mr-1' target='_blank'>Github</a>
+              Are you interested in working with me? Please reach out and
+              contact me through email, phone, or send me a message below.
+            </p>
+            <p>
+              <a href="./resume/webguyty-resume.pdf" class="mr-1"
+                >View Resume</a
+              >
+              <a href="mailto:tyler@webguyty.com" class="mr-1"
+                >tyler@webguyty.com</a
+              >
+              <a href="tel:5303910975" class="mr-1">(530) 391-0975</a>
+              <a href="https://github.com/webguyty" class="mr-1" target="_blank"
+                >Github</a
+              >
             </p>
           </div>
           <div class="hire__skills">
@@ -375,22 +481,45 @@
             <ul class="hire__list primary-list">
               <div>
                 <li><i class="fa fa-chevron-right hire__icon"></i> HTML 5</li>
-                <li><i class="fa fa-chevron-right hire__icon"></i> CSS 3 (flexbox, grid, animations, frameworks)</li>
+                <li>
+                  <i class="fa fa-chevron-right hire__icon"></i> CSS 3 (flexbox,
+                  grid, animations, frameworks)
+                </li>
                 <li><i class="fa fa-chevron-right hire__icon"></i> SCSS</li>
-                <li><i class="fa fa-chevron-right hire__icon"></i> JavaScript</li>
+                <li>
+                  <i class="fa fa-chevron-right hire__icon"></i> JavaScript
+                </li>
                 <li><i class="fa fa-chevron-right hire__icon"></i> Gatsby</li>
                 <li><i class="fa fa-chevron-right hire__icon"></i> D3</li>
                 <li><i class="fa fa-chevron-right hire__icon"></i> React</li>
                 <li><i class="fa fa-chevron-right hire__icon"></i> GitHub</li>
               </div>
               <div>
-                <li><i class="fa fa-chevron-right hire__icon"></i> Mobile optimization</li>
+                <li>
+                  <i class="fa fa-chevron-right hire__icon"></i> Mobile
+                  optimization
+                </li>
                 <li><i class="fa fa-chevron-right hire__icon"></i> Webpack</li>
-                <li><i class="fa fa-chevron-right hire__icon"></i> SEO Optimization</li>
-                <li><i class="fa fa-chevron-right hire__icon"></i> Ecommerce (CS-Cart)</li>
-                <li><i class="fa fa-chevron-right hire__icon"></i> Google Analytics</li>
-                <li><i class="fa fa-chevron-right hire__icon"></i> PPC advertising and integration</li>
-                <li><i class="fa fa-chevron-right hire__icon"></i> Excellent communication</li>
+                <li>
+                  <i class="fa fa-chevron-right hire__icon"></i> SEO
+                  Optimization
+                </li>
+                <li>
+                  <i class="fa fa-chevron-right hire__icon"></i> Ecommerce
+                  (CS-Cart)
+                </li>
+                <li>
+                  <i class="fa fa-chevron-right hire__icon"></i> Google
+                  Analytics
+                </li>
+                <li>
+                  <i class="fa fa-chevron-right hire__icon"></i> PPC advertising
+                  and integration
+                </li>
+                <li>
+                  <i class="fa fa-chevron-right hire__icon"></i> Excellent
+                  communication
+                </li>
               </div>
             </ul>
           </div>
@@ -398,38 +527,66 @@
       </div>
     </section>
 
-    <section class="section-about scrollspy" id='sec-about'>
+    <section class="section-about scrollspy" id="sec-about">
       <div class="container">
         <div class="about">
           <h2>About</h2>
           <div class="about__text-grid">
             <div class="about__text-grid--1">
-              <p>I became enthralled with web programming and building websites in 2012 and have been enjoying it ever since. It all started when I needed to build a simple website for my local service business. Once I began I couldn't stop learning. 
+              <p>
+                I became enthralled with web programming and building websites
+                in 2012 and have been enjoying it ever since. It all started
+                when I needed to build a simple website for my local service
+                business. Once I began I couldn't stop learning.
               </p>
 
-              <p>From my basic website of html and CSS I delved into PHP. Making a client log in system where clients could login into a portal. Clients could review private reports I wrote for them and make comments on the blog I created.</p>
+              <p>
+                From my basic website of html and CSS I delved into PHP. Making
+                a client log in system where clients could login into a portal.
+                Clients could review private reports I wrote for them and make
+                comments on the blog I created.
+              </p>
             </div>
-            <div class="about__text-grid--1">            
-              <p>I love learning to build new things. I engineered and built a 500+ gallon indoor reef ecosystem. I enjoy spending time with my dogs being active, and lifting weights. My latest pursuit has been developing my green thumb and planting a garden at my home.</p>
+            <div class="about__text-grid--1">
+              <p>
+                I love learning to build new things. I engineered and built a
+                500+ gallon indoor reef ecosystem. I enjoy spending time with my
+                dogs being active, and lifting weights. My latest pursuit has
+                been developing my green thumb and planting a garden at my home.
+              </p>
             </div>
           </div>
           <!-- end text grid -->
           <div class="about__images-grid">
-            <div class="about__images"><img src="./images/webguyty-reef.jpg" alt="Webguyty's in-home reef system"></div>
-            <div class="about__images"><img src="./images/webguyty-boat.jpg" alt="Webguyty on a river raft"> </div>
-            <div class="about__images"><img src="./images/webguyty-garden.jpg" alt="Webguyty's garden"> </div>
+            <div class="about__images">
+              <img
+                src="./images/webguyty-reef.jpg"
+                alt="Webguyty's in-home reef system"
+              />
+            </div>
+            <div class="about__images">
+              <img
+                src="./images/webguyty-boat.jpg"
+                alt="Webguyty on a river raft"
+              />
+            </div>
+            <div class="about__images">
+              <img src="./images/webguyty-garden.jpg" alt="Webguyty's garden" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="footer">
-      <p>            
-        <a href='mailto:tyler@webguyty.com' class='mr-1 footer__email'>tyler@webguyty.com</a>
+      <p>
+        <a href="mailto:tyler@webguyty.com" class="mr-1 footer__email"
+          >tyler@webguyty.com</a
+        >
       </p>
-      <a href="#sec-intro" class='footer__top-page'><i class="fa fa-arrow-circle-up"></i> Top of page</a>
+      <a href="#sec-intro" class="footer__top-page"
+        ><i class="fa fa-arrow-circle-up"></i> Top of page</a
+      >
     </section>
-
-
   </body>
 </html>
