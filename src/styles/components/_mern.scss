@@ -1,5 +1,5 @@
 .mern {
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   border: 5px solid $color-primary;
   border-radius: 10px;
   padding: 2rem;
@@ -7,6 +7,41 @@
 
 .mern-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1rem 1fr 1fr;
   gap: 2rem;
+}
+
+// Column ordering
+.mern {
+  &-leftBar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 0;
+  }
+  &-backend {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    // grid-row-start: 1;
+    // grid-row-end: 3;
+  }
+  &-goalSeeker {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    // grid-row-start: 1;
+    // grid-row-end: 4;
+  }
+  &-contactKeeper {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    // grid-row-start: 1;
+    // grid-row-end: 3;
+  }
+  &-itLogger {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    // grid-row-start: 1;
+    // grid-row-end: 3;
+  }
 }
