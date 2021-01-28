@@ -5,13 +5,13 @@
   padding: 2rem;
 }
 
-$gap-width: 5rem;
+$gap-width: 6rem;
 $bar-thickness: 1rem;
 
 .mern-grid {
   display: grid;
   grid-template-columns: $bar-thickness 1fr 1fr $bar-thickness;
-  gap: $gap-width;
+  gap: 2rem $gap-width;
 }
 
 // Column ordering
@@ -69,13 +69,13 @@ $bar-thickness: 1rem;
     grid-row-end: 4;
     padding: 0;
     border: none;
-    height: 65%;
+    height: 60%;
     align-self: center;
 
     // rightBar children styling
 
     display: grid;
-    grid-template-columns: 5rem $bar-thickness;
+    grid-template-columns: $gap-width $bar-thickness;
 
     &-long {
       grid-column-start: 2;
