@@ -69,7 +69,7 @@ $gap-width-bottom: 6rem;
       }
       &--3 {
         // align-self: end;
-        width: $gap-width + $gap-width-bottom;
+        width: $gap-width + $gap-width-bottom / 2;
       }
     }
   }
