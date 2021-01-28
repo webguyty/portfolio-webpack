@@ -22,7 +22,7 @@ $bg-card-color: rgba(
 
   & p {
     font-size: 2rem;
-    color: rgb(10, 10, 10);
+    color: rgb(0, 0, 0);
     // background-color: rgba($color: white, $alpha: 0.44);
     // border-radius: 10px;
     display: inline-block;
@@ -182,6 +182,18 @@ $gap-width-bottom: 6rem;
 // Card Styling
 //
 
+// Link color styling
+.mern {
+  & a {
+    font-weight: bold;
+    color: $color-tertiary-dark;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}
+
 .mern .mern-title {
   & > * {
     display: inline-block;
@@ -194,19 +206,12 @@ $gap-width-bottom: 6rem;
   & a {
     font-size: 1.6rem;
     margin-left: 0.6rem;
-    font-weight: bold;
-    color: $color-tertiary-dark;
   }
 }
 
 .mern .mern-github {
   font-size: 1.4rem;
   line-height: 1.4rem;
-
-  & a {
-    font-weight: bold;
-    color: $color-tertiary-dark;
-  }
 }
 
 .mern .mern-bio {
