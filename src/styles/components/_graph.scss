@@ -8,6 +8,13 @@
 
   color: $color-grey-light-1;
 }
+
+.graph-title {
+  color: $color-primary;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
 .graph-layout {
   margin-top: 5rem;
   display: grid;

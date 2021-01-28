@@ -59,9 +59,19 @@ section.section-goalSeeker {
   }
 }
 
-section.section-covid {
-  padding: 10rem $page-margin;
+section .section-covid {
+  padding-bottom: 10rem;
   background-color: $color-grey-dark-3;
+
+  &-bg-opacity-fade {
+    height: 7rem;
+    margin-bottom: 7rem;
+    background-image: linear-gradient(
+      to bottom,
+      $intro-color,
+      $color-grey-dark-3
+    );
+  }
 
   @include respond(big-desktop) {
     padding: 10rem $page-margin-lg;
