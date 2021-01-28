@@ -168,3 +168,21 @@ $gap-width-bottom: 6rem;
     margin-left: 0.6rem;
   }
 }
+
+.mern .mern-github {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+.mern .mern-bio {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mern .mern-tech {
+  margin-bottom: 0;
+  &-title {
+    font-weight: bold;
+  }
+}
