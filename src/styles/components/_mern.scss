@@ -3,6 +3,12 @@
   border: 5px solid $color-primary;
   border-radius: 10px;
   padding: 2rem;
+
+  &-bg-opacity-layer {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 $gap-width: 6rem;
