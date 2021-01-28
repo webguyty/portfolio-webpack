@@ -14,20 +14,27 @@ section.section-intro {
 
 .section-mern {
   background-image: url("./images/design/starry.png");
-  background-position: 40% 10%;
+  background-position: 20% 30%;
   background-repeat: no-repeat;
 
+  $bg-opacity: rgba(white, 0.1);
+
+  &-bg-opacity-fade {
+    height: 7rem;
+    padding: 0 $page-margin;
+    background-image: linear-gradient(to bottom, $intro-color, $bg-opacity);
+  }
+
   &-bg-opacity-layer {
-    padding: 10rem $page-margin;
-    background-color: rgba($color: white, $alpha: 0.4);
+    padding: 7rem $page-margin 10rem $page-margin;
+    background-color: $bg-opacity;
     height: 100%;
     width: 100%;
   }
-  // background-color: $color-grey-dark-3;
-  // color: $color-grey-light-1;
 
   & h3 {
     color: $color-primary;
+    margin-top: 0;
   }
 
   @include respond(big-desktop) {
