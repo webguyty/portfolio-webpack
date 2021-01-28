@@ -5,10 +5,13 @@
   padding: 2rem;
 }
 
+$gap-width: 5rem;
+$bar-thickness: 1rem;
+
 .mern-grid {
   display: grid;
-  grid-template-columns: 1rem 1fr 1fr;
-  gap: 5rem;
+  grid-template-columns: $bar-thickness 1fr 1fr $bar-thickness;
+  gap: $gap-width;
 }
 
 // Column ordering
@@ -27,14 +30,15 @@
     // leftBar children styling
 
     display: grid;
-    grid-template-columns: 1rem 5rem;
+    grid-template-columns: $bar-thickness $gap-width;
+    align-content: space-between;
 
     &-long {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 1;
       grid-row-end: 4;
-      width: 1rem;
+      width: $bar-thickness;
       height: 100%;
       background-color: $color-primary;
       border-radius: 10px 0 0 10px;
@@ -43,14 +47,60 @@
     &-short {
       grid-column-start: 2;
       grid-column-end: 3;
-      width: 5rem;
-      height: 1rem;
+      width: $gap-width;
+      height: $bar-thickness;
       background-color: $color-primary;
 
       &--2 {
-        align-self: center;
+        // align-self: center;
       }
       &--3 {
+        // align-self: end;
+      }
+    }
+  }
+
+  &-rightBar {
+    // rightBar container spacing
+    margin-left: -$gap-width;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 0;
+    border: none;
+    height: 65%;
+    align-self: center;
+
+    // rightBar children styling
+
+    display: grid;
+    grid-template-columns: 5rem $bar-thickness;
+
+    &-long {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      width: $bar-thickness;
+      height: 100%;
+      background-color: $color-primary;
+      border-radius: 0 10px 10px 0;
+    }
+
+    &-short {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      width: $gap-width;
+      height: $bar-thickness;
+      background-color: $color-primary;
+
+      &--1 {
+        align-self: start;
+      }
+      &--2 {
         align-self: end;
       }
     }
