@@ -163,15 +163,26 @@ $gap-width-bottom: 6rem;
     display: inline-block;
   }
 
+  & h4 {
+    font-size: 2rem;
+  }
+
   & a {
     font-size: 1.6rem;
     margin-left: 0.6rem;
+    font-weight: bold;
+    color: $color-tertiary-dark;
   }
 }
 
 .mern .mern-github {
   font-size: 1.4rem;
   line-height: 1.4rem;
+
+  & a {
+    font-weight: bold;
+    color: $color-tertiary-dark;
+  }
 }
 
 .mern .mern-bio {
