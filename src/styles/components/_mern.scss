@@ -2,22 +2,27 @@
   // margin-bottom: 2rem;
   border: 5px solid $color-primary;
   border-radius: 10px;
-  padding: 2rem;
-
-  &-bg-opacity-layer {
-    background-color: white;
-    height: 100%;
-    width: 100%;
-  }
+  padding: 1.5rem 2rem;
+  background-color: rgba($color: white, $alpha: 0.9);
 }
 
-$gap-width: 6rem;
+//
+// Grid config
+//
+
+$gap-width: 5rem;
 $bar-thickness: 1rem;
+
+// Backend section width difference
+$gap-width-backend: 3rem;
+
+// Bottom grid - contact keeper and it logger
+$gap-width-bottom: 6rem;
 
 .mern-grid {
   display: grid;
   grid-template-columns: $bar-thickness 1fr 1fr $bar-thickness;
-  gap: 2rem $gap-width;
+  gap: 1.5rem $gap-width;
 }
 
 // Column ordering
@@ -28,8 +33,6 @@ $bar-thickness: 1rem;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
-    padding: 0;
-    border: none;
     height: 80%;
     align-self: center;
 
@@ -57,11 +60,16 @@ $bar-thickness: 1rem;
       height: $bar-thickness;
       background-color: $color-primary;
 
+      &--1 {
+        // align-self: center;
+        width: $gap-width + $gap-width-backend;
+      }
       &--2 {
         // align-self: center;
       }
       &--3 {
         // align-self: end;
+        width: $gap-width + $gap-width-bottom;
       }
     }
   }
@@ -73,8 +81,6 @@ $bar-thickness: 1rem;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
-    padding: 0;
-    border: none;
     height: 60%;
     align-self: center;
 
@@ -104,9 +110,15 @@ $bar-thickness: 1rem;
       background-color: $color-primary;
 
       &--1 {
+        width: $gap-width + $gap-width-backend;
+        margin-right: 10rem !important;
+        // margin-right: $gap-width-backend;
+        margin-left: -$gap-width-backend;
         align-self: start;
       }
       &--2 {
+        width: $gap-width + $gap-width-backend;
+        margin-left: -$gap-width-bottom / 2;
         align-self: end;
       }
     }
@@ -115,6 +127,8 @@ $bar-thickness: 1rem;
   &-backend {
     grid-column-start: 2;
     grid-column-end: 4;
+    margin-left: $gap-width-backend;
+    margin-right: $gap-width-backend;
     // grid-row-start: 1;
     // grid-row-end: 3;
   }
@@ -127,13 +141,30 @@ $bar-thickness: 1rem;
   &-contactKeeper {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-left: $gap-width-bottom / 2;
     // grid-row-start: 1;
     // grid-row-end: 3;
   }
   &-itLogger {
     grid-column-start: 3;
     grid-column-end: 4;
+    margin-right: $gap-width-bottom / 2;
     // grid-row-start: 1;
     // grid-row-end: 3;
+  }
+}
+
+//
+// Card Styling
+//
+
+.mern .mern-title {
+  & > * {
+    display: inline-block;
+  }
+
+  & a {
+    font-size: 1.6rem;
+    margin-left: 0.6rem;
   }
 }
