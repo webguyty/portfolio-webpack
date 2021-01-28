@@ -12,7 +12,7 @@ section.section-intro {
   }
 }
 
-.section-mern {
+section .section-mern {
   background-image: url("./images/design/starry.png");
   background-position: 20% 30%;
   background-repeat: no-repeat;
@@ -36,6 +36,19 @@ section.section-intro {
     color: $color-primary;
     margin-top: 0;
   }
+
+  @include respond(big-desktop) {
+    padding: 10rem $page-margin-lg;
+  }
+
+  @include respond(tab-land) {
+    padding: 10rem $page-margin-mobile;
+  }
+}
+
+section.section-goalSeeker {
+  padding: 10rem $page-margin;
+  background-color: white;
 
   @include respond(big-desktop) {
     padding: 10rem $page-margin-lg;
