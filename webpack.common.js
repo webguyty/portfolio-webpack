@@ -1,34 +1,34 @@
-const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    main: "./src/index.js",
   },
   module: {
     rules: [
       {
         test: /\.html$/,
-        use: ['html-loader'],
+        use: ["html-loader"],
       },
       {
         test: /\.(svg|png|jpg|gif)$/,
         use: {
-          loader: 'file-loader',
+          loader: "file-loader",
           options: {
             // name: '[name].[ext]',
-            name: '[name].[hash].[ext]',
-            outputPath: 'imgs',
+            name: "[name].[hash].[ext]",
+            outputPath: "imgs",
           },
         },
       },
       {
         test: /\.pdf$/,
         use: {
-          loader: 'file-loader',
+          loader: "file-loader",
           options: {
-            name: '[name].[ext]',
-            outputPath: 'resume',
+            name: "[name].[ext]",
+            outputPath: "resources",
           },
         },
       },
