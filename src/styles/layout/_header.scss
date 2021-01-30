@@ -1,7 +1,7 @@
 .portfolio-header {
   height: 96vh;
   background-color: $header-blue;
-  background-image: url('./images/design/az-subtle.png');
+  background-image: url("./images/design/az-subtle.png");
   display: grid;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@
     margin: auto;
     width: 30rem;
     height: 30rem;
-    background-image: url('./images/webguyty-golden.jpg');
+    background-image: url("./images/webguyty-golden.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
