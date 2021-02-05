@@ -47,10 +47,13 @@ section .section-mern {
   }
 }
 
-section.section-goalSeeker {
+section .section-goalSeeker {
   padding: 10rem $page-margin;
   background-color: white;
   min-height: 50rem;
+
+  // Styling for bottom star section
+  display: relative;
   clip-path: polygon(
     0% 0%,
     100% 0%,
@@ -60,6 +63,10 @@ section.section-goalSeeker {
     26% 96%,
     0 100%
   );
+
+  &-star {
+    color: green;
+  }
 
   @include respond(big-desktop) {
     padding: 10rem $page-margin-lg;
