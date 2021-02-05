@@ -337,113 +337,113 @@
             </p>
           </div>
         </div>
-        <i
-          class="fas fa-bahai section-goalSeeker-star section-goalSeeker-star--1"
-        ></i>
-        <i
-          class="fas fa-bahai section-goalSeeker-star section-goalSeeker-star--2"
-        ></i>
-        <i
-          class="fas fa-bahai section-goalSeeker-star section-goalSeeker-star--3"
-        ></i>
       </section>
 
       <section class="section-covid">
-        <div class="container">
-          <div class="project">
-            <h3 class="graph-title">Front-end development</h3>
-            <p>
-              Developing and designing the graphing of data collected on
-              Coronavirus statistics across the globe. Creating a cohesive way
-              to dynamically graph and display data. Integration of a user
-              interface
-            </p>
-            <p>
-              <strong>Technologies used:</strong> React, Context API, JSON Web
-              Token, Material Design, & MongoDB
-            </p>
-            <p>
-              <strong>Github:</strong>
-              <a
-                href="https://github.com/webguyty/coronadatascraper/blob/graph/covidatlas/location-graph.js"
-                target="_blank"
-                >JavaScript and D3</a
-              >
-            </p>
-          </div>
-          <!-- grid -->
-          <div class="graph-layout">
-            <!-- Data totals -->
-            <div class="data-container">
-              <div class="data-row">
-                <h3 class="data-title">Cases:</h3>
-                <h3 class="data-data" id="data-cases"></h3>
-              </div>
-              <div class="data-row">
-                <h3 class="data-title">Deaths:</h3>
-                <h3 class="data-data" id="data-deaths"></h3>
-              </div>
-              <div class="data-row">
-                <h3 class="data-title">Hospitalized:</h3>
-                <h3 class="data-data" id="data-hospitalized"></h3>
-              </div>
-              <div class="data-row">
-                <h3 class="data-title">Recovered:</h3>
-                <h3 class="data-data" id="data-recovered"></h3>
-              </div>
-              <div class="data-row">
-                <h3 class="data-title">Active Cases:</h3>
-                <h3 class="data-data" id="data-active"></h3>
-              </div>
-              <div class="data-row">
-                <h3 class="data-title">Tested:</h3>
-                <h3 class="data-data" id="data-tested"></h3>
-              </div>
+        <div class="star-container">
+          <i class="fas fa-bahai section-covid-star section-covid-star--1"></i>
+          <!-- <i
+          class="fas fa-bahai section-covid-star section-covid-star--2"
+        ></i>
+        <i
+          class="fas fa-bahai section-covid-star section-covid-star--3"
+        ></i> -->
+          <div class="container">
+            <div class="project">
+              <h3 class="graph-title">Front-end development</h3>
+              <p>
+                Developing and designing the graphing of data collected on
+                Coronavirus statistics across the globe. Creating a cohesive way
+                to dynamically graph and display data. Integration of a user
+                interface
+              </p>
+              <p>
+                <strong>Technologies used:</strong> React, Context API, JSON Web
+                Token, Material Design, & MongoDB
+              </p>
+              <p>
+                <strong>Github:</strong>
+                <a
+                  href="https://github.com/webguyty/coronadatascraper/blob/graph/covidatlas/location-graph.js"
+                  target="_blank"
+                  >JavaScript and D3</a
+                >
+              </p>
             </div>
-            <!-- End data totals -->
-            <!-- Covid Atlas graph -->
-            <div class="graph-container">
-              <h4 class="">Timeline</h4>
-              <div class="graph-button-container">
-                <div class="graph-button-container-overview">
-                  <button
-                    class="graph-button graph-button--primary"
-                    id="graph-btn-overview"
-                  >
-                    Overview
-                  </button>
-                  <button
-                    class="graph-button graph-button--primary"
-                    id="graph-btn-daily"
-                  >
-                    Daily Statistics
-                  </button>
+            <!-- grid -->
+            <div class="graph-layout">
+              <!-- Data totals -->
+              <div class="data-container">
+                <div class="data-row">
+                  <h3 class="data-title">Cases:</h3>
+                  <h3 class="data-data" id="data-cases"></h3>
                 </div>
-                <div class="graph-button-container-daily">
-                  <button
-                    class="graph-button graph-button--secondary"
-                    id="graph-btn-linear"
-                  >
-                    Linear
-                  </button>
-                  <button
-                    class="graph-button graph-button--secondary"
-                    id="graph-btn-log"
-                  >
-                    Logarithmic
-                  </button>
+                <div class="data-row">
+                  <h3 class="data-title">Deaths:</h3>
+                  <h3 class="data-data" id="data-deaths"></h3>
+                </div>
+                <div class="data-row">
+                  <h3 class="data-title">Hospitalized:</h3>
+                  <h3 class="data-data" id="data-hospitalized"></h3>
+                </div>
+                <div class="data-row">
+                  <h3 class="data-title">Recovered:</h3>
+                  <h3 class="data-data" id="data-recovered"></h3>
+                </div>
+                <div class="data-row">
+                  <h3 class="data-title">Active Cases:</h3>
+                  <h3 class="data-data" id="data-active"></h3>
+                </div>
+                <div class="data-row">
+                  <h3 class="data-title">Tested:</h3>
+                  <h3 class="data-data" id="data-tested"></h3>
                 </div>
               </div>
-              <div class="graph-legend">
-                <div class="graph-legend-key-container">
-                  <span class="graph-legend-key-description">Key:</span>
+              <!-- End data totals -->
+              <!-- Covid Atlas graph -->
+              <div class="graph-container">
+                <h4 class="">Timeline</h4>
+                <div class="graph-button-container">
+                  <div class="graph-button-container-overview">
+                    <button
+                      class="graph-button graph-button--primary"
+                      id="graph-btn-overview"
+                    >
+                      Overview
+                    </button>
+                    <button
+                      class="graph-button graph-button--primary"
+                      id="graph-btn-daily"
+                    >
+                      Daily Statistics
+                    </button>
+                  </div>
+                  <div class="graph-button-container-daily">
+                    <button
+                      class="graph-button graph-button--secondary"
+                      id="graph-btn-linear"
+                    >
+                      Linear
+                    </button>
+                    <button
+                      class="graph-button graph-button--secondary"
+                      id="graph-btn-log"
+                    >
+                      Logarithmic
+                    </button>
+                  </div>
                 </div>
+                <div class="graph-legend">
+                  <div class="graph-legend-key-container">
+                    <span class="graph-legend-key-description">Key:</span>
+                  </div>
+                </div>
+                <div id="graph" class="ca-Graph"></div>
               </div>
-              <div id="graph" class="ca-Graph"></div>
+              <!-- End graph -->
             </div>
-            <!-- End graph -->
+            <!-- End grid  -->
           </div>
-          <!-- End grid  -->
         </div>
       </section>
 

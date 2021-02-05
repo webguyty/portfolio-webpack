@@ -47,21 +47,33 @@ section .section-mern {
   }
 }
 
+// Styling for bottom star section angle (stars in covid section)
+// Highest num star starts from left
+$star3X: 71%;
+$star3Y: 93%;
+
+$star2X: 52%;
+$star2Y: 100%;
+
+$star1X: 26%;
+$star1Y: 96%;
+
 section .section-goalSeeker {
   padding: 10rem $page-margin;
   background-color: white;
   min-height: 50rem;
+  z-index: 10;
 
-  // Styling for bottom star section
-  display: relative;
-  $star3X: 71%;
-  $star3Y: 93%;
+  // Styling for bottom star section angle (stars in covid section)
+  // Highest num star starts from left
+  // $star3X: 71%;
+  // $star3Y: 93%;
 
-  $star2X: 52%;
-  $star2Y: 100%;
+  // $star2X: 52%;
+  // $star2Y: 100%;
 
-  $star1X: 26%;
-  $star1Y: 96%;
+  // $star1X: 26%;
+  // $star1Y: 96%;
 
   clip-path: polygon(
     0% 0%,
@@ -73,14 +85,6 @@ section .section-goalSeeker {
     0 100%
   );
 
-  &-star {
-    color: green;
-    position: absolute;
-
-    &--1 {
-    }
-  }
-
   @include respond(big-desktop) {
     padding: 10rem $page-margin-lg;
   }
@@ -90,11 +94,31 @@ section .section-goalSeeker {
   }
 }
 
+// For star styling
+.star-container {
+  position: relative;
+  // margin-top: 10rem;
+}
+
 section .section-covid {
-  margin-top: -10rem;
   padding-top: 20rem;
+  margin-top: -10rem;
   padding-bottom: 10rem;
   background-color: $color-grey-dark-3;
+
+  // Styling for stars at top of div
+  // position: relative;
+  &-star {
+    color: green;
+    position: absolute;
+
+    &--1 {
+      font-size: 3rem;
+      left: $star1X;
+      top: $star1Y;
+      transform: translate(-50%, -50%);
+    }
+  }
 
   @include respond(big-desktop) {
     padding: 10rem $page-margin-lg;
