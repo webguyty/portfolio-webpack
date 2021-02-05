@@ -54,22 +54,31 @@ section .section-goalSeeker {
 
   // Styling for bottom star section
   display: relative;
-  $star1pos: 26% 96%;
-  $star2pos: 52% 100%;
-  $star3pos: 71% 93%;
+  $star3X: 71%;
+  $star3Y: 93%;
+
+  $star2X: 52%;
+  $star2Y: 100%;
+
+  $star1X: 26%;
+  $star1Y: 96%;
 
   clip-path: polygon(
     0% 0%,
     100% 0%,
     100% 100%,
-    $star3pos,
-    $star2pos,
-    $star1pos,
+    $star3X $star3Y,
+    $star2X $star2Y,
+    $star1X $star1Y,
     0 100%
   );
 
   &-star {
     color: green;
+    position: absolute;
+
+    &--1 {
+    }
   }
 
   @include respond(big-desktop) {
