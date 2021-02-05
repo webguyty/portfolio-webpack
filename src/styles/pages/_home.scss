@@ -54,13 +54,17 @@ section .section-goalSeeker {
 
   // Styling for bottom star section
   display: relative;
+  $star1pos: 26% 96%;
+  $star2pos: 52% 100%;
+  $star3pos: 71% 93%;
+
   clip-path: polygon(
     0% 0%,
     100% 0%,
     100% 100%,
-    71% 93%,
-    52% 100%,
-    26% 96%,
+    $star3pos,
+    $star2pos,
+    $star1pos,
     0 100%
   );
 
