@@ -11,6 +11,7 @@ import { showGraph, showData } from "./scripts/graph";
 import "./assets/webguyty-resume.pdf";
 
 // Initialize functions for covid graph section
+//
 showGraph();
 showData();
 
